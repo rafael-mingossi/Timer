@@ -4,6 +4,7 @@ import { Text, View, Platform, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Audio } from "expo-av";
 import styles from "./styles";
+import Fading from "./Fading";
 
 const Counter = (props) => {
   var done = false;
@@ -83,6 +84,8 @@ const Counter = (props) => {
         colors={["rgba(0,0,0,0.8)", "transparent"]}
         style={styles.background}
       />
+
+      <Fading seconds={seconds} />
 
       <StatusBar style="auto" />
 
